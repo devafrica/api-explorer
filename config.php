@@ -1,8 +1,8 @@
 <?php
 return array(
-        'api' => 'https://explorer.conceal.network/daemon',
-        'pool' => 'https://explorer.conceal.network/pool',
-        'services' => 'https://explorer.conceal.network/services',
+        'api' => 'https://restapi.cryptopay.org.za',
+        'pool' => 'https://restapi.cryptopay.org.za/pools',
+        'services' => 'https://restapi.cryptopay.org.za',
         'blockTargetInterval' => 120,
         'coinUnits' => 1000000
 );
