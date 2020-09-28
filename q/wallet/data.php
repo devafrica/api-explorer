@@ -6,7 +6,7 @@ $config = (require '../../config.php');
 $bitstamp = fetch_bitstamp($config['bitstamp']);
 $btc = number_format($bitstamp['last'],2,".",",");
 
-$coingecko = fetch_coingecko("https://api.coingecko.com/api/v3/coins/cryptopayafrica");
+$coingecko = fetch_coingecko("https://api.coingecko.com/api/v3/coins/cpay");
 $cpausd = number_format($coingecko['market_data']['current_price']['usd'],2,".",",");
 $marketcap = number_format($coingecko['market_data']['market_cap']['usd'],2,".",",");
 $totalvolume = number_format($coingecko['market_data']['total_volume']['usd'],2,".",",");
@@ -14,4 +14,3 @@ $cpabtc = number_format(($coingecko['market_data']['current_price']['btc'])*1000
 
 
 print_r($cpabtc." ".$cpausd." ".$btc." ".$marketcap." ".$totalvolume);
-

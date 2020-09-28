@@ -58,7 +58,7 @@
       <div class="modal-header pd-x-20 dlgBgDarker">
         <h6 class="tx-14 mg-b-0 tx-uppercase tx-inverse tx-bold">Copied</h6>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
+          <span aria-hidden="true">Ã—</span>
         </button>
       </div>
       <div class="modal-body pd-20">
@@ -113,8 +113,8 @@
 
 
   function loadNodesDataToTable(initialLoad) {
-    $.getJSON("https://api.github.com/repos/ConcealNetwork/conceal-core/releases/latest", function (release) {
-      $.getJSON("https://restapi.cryptopay.org.za/pool/list?hasFeeAddr=true&isReachable=true", function (data) {
+    $.getJSON("https://api.github.com/repos/devafrica/cpacoin/releases/latest", function (release) {
+      $.getJSON("https://restapi.cryptopay.org.za/node/list?hasFeeAddr=false&isReachable=false&isSynced=True", function (data) {
         var correctHeightList = {};
         var correctHeightCnt = 0;
         var tableData = [];
@@ -127,9 +127,9 @@
 
             if (obj.name) {
               if (obj.url && obj.url.host) {
-                rowData.push(obj.url.host + ":" + (obj.url.port || "16000"));
+                rowData.push(obj.url.host + ":" + (obj.url.port || "13281"));
               } else {
-                rowData.push(obj.location ? (obj.location.ip + ":" + (obj.nodePort || "16000")) : (obj.ip.substring(7) + ":" + (obj.nodePort || "16000")));
+                rowData.push(obj.location ? (obj.location.ip + ":" + (obj.nodePort || "13281")) : (obj.ip.substring(7) + ":" + (obj.nodePort || "13281")));
               }
               rowData.push(obj.name);
               if ((obj.location) && (obj.location.data)) {

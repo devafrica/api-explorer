@@ -89,7 +89,7 @@
   }
 
   function loadNodesDataToTable(initialLoad) {
-    $.getJSON("https://api.github.com/repos/ConcealNetwork/conceal-core/releases/latest", function (release) {
+    $.getJSON("https://api.github.com/repos/devafrica/cpacoin/releases/latest", function (release) {
       $.getJSON("https://restapi.cryptopay.org.za/pool/list?hasFeeAddr=false&isReachable=false&isSynced=True", function (data) {
         var correctHeightList = {};
         var correctHeightCnt = 0;
@@ -102,7 +102,7 @@
             var rowData = [];
 
             if (obj.name) {
-              rowData.push(obj.location ? (obj.location.ip + ":" + (obj.nodePort || "16000")) : (obj.ip.substring(7) + ":" + (obj.nodePort || "16000")));
+              rowData.push(obj.location ? (obj.location.ip + ":" + (obj.nodePort || "13281")) : (obj.ip.substring(7) + ":" + (obj.nodePort || "13281")));
               rowData.push(obj.name);
               if ((obj.location) && (obj.location.data)) {
                 rowData.push(getCountryName(obj.location.data.country));

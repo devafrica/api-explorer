@@ -7,7 +7,7 @@
     "bp": "BP",
     "txFunds": "Funds",
     "searchHint": "Buscar por altura de bloque / hash, hash de transacción, identificación de pago",
-    
+
     "welcome": "Bienvenido",
     "earnedToDate": "Intereses ganado hasta hoy",
     "interestEarnedInfo": "All the interest paid from deposits",
@@ -20,12 +20,12 @@
     "netDiffInfo": "El gráfico a la derecha muestra la dificultad de la red en los últimos 30 bloques",
     "netExplorer": "Explorador de red>",
     "netOverallSummary": "Resumen general de la red",
-    "aboutConcealNetwork": "Sobre la red Conceal",
+    "aboutCpaCoinNetwork": "Sobre la red CpaCoin",
     "blockchainHeight": "Altura del bloque",
     "transactions": "transacciones",
     "netHashrate": "Hashrate de red",
     "supplyAndBanking": "Banking",
-    "aboutConcealBanking": "Sobre Conceal Banking",
+    "aboutCpaCoinBanking": "Sobre CpaCoin Banking",
     "totalBankedInfo": "Total de fondos bloqueados en depósitos e inversiones",
     "circulatingSuppy": "Suministro en circulacion",
     "circulatingSuppyInfo": "El número total de monedas no almacenadas",
@@ -39,7 +39,7 @@
     "estimateProfit": "Estimación de ganancias mineras",
     "enterYourHashrate": "Ingrese su tasa de hash",
     "perDay": "por día",
-    
+
     "netStats": "ESTADÍSTICAS DE RED",
     "txNetworkAmmount": "CANTIDAD",
     "txNetworkFee": "COMISSION",
@@ -57,7 +57,7 @@
     "blockLatestTXS": "TXS",
     "blockLatestTime": "DATA-TIMPO",
     "searchHeight": "ALTURA",
-    
+
     "estadísticas": "estadísticas",
     "poolsSpeed": "Velocidad de Pools:",
     "networkSpeed": "Velocidad de red:",
@@ -168,7 +168,7 @@
     "txViewOutputsTitle": "Salidas",
     "txViewOutputsAmmount": "Cantidad",
     "txViewOutputsKey": "Llave",
-	
+
 	"bpTitle": "Mira el Balance",
 	"bpDescription": "De este modo, puedes verificar una firma que demuestre que el propietario de la 'dirección' tiene al menos esta cantidad, opcionalmente con una cadena de desafío en 'mensaje'.",
 	"bpAddress": "Direccion",

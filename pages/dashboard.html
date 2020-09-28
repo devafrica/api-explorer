@@ -64,8 +64,8 @@
         <h4 class="tx-white mg-b-3" tkey="netOverallSummary">Overall Network Summary</h4>
       </div>
       <div>
-        <a href="https://conceal.network/#about" class="btn btn-primary-outline" tkey="aboutConcealNetwork">About
-          Conceal Network</a>
+        <a href="https://CpaCoin.network/#about" class="btn btn-primary-outline" tkey="aboutCpaCoinNetwork">About
+          CpaCoin Network</a>
       </div>
     </div><!-- d-flex -->
 
@@ -305,8 +305,8 @@
         }
       });
 
-      // get conceal market data
-      $.getJSON("https://api.coingecko.com/api/v3/coins/conceal?sparkline=true", function (data) {
+      // get CpaCoin market data
+      $.getJSON("https://api.coingecko.com/api/v3/coins/cpay?sparkline=true", function (data) {
         USDperCPA = data.market_data.current_price.usd;
         $("#CPAToUSD").html("$ " + localizeNumber(data.market_data.current_price.usd.toFixed(2)));
         $("#CCXToBTC").html(data.market_data.current_price.btc.toFixed(8));
