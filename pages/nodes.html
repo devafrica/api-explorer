@@ -114,7 +114,7 @@
 
   function loadNodesDataToTable(initialLoad) {
     $.getJSON("https://api.github.com/repos/ConcealNetwork/conceal-core/releases/latest", function (release) {
-      $.getJSON("https://blockchain.cryptopay.org.za/pool/list?hasFeeAddr=true&isReachable=true", function (data) {
+      $.getJSON("https://restapi.cryptopay.org.za/pool/list?hasFeeAddr=true&isReachable=true", function (data) {
         var correctHeightList = {};
         var correctHeightCnt = 0;
         var tableData = [];

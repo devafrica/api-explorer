@@ -12,7 +12,7 @@
     "earnedToDate": "Intereses ganado hasta hoy",
     "interestEarnedInfo": "All the interest paid from deposits",
     "maxSupplyInfo": "Max CPA that will ever be minted",
-    "totalBanked": "Total Banked",
+    "totalBanked": "total escrow",
     "overview": "vista general",
     "interestPerBlock": "Interest per block",
     "interestPerBlockInfo": "Interest paid on average per block",

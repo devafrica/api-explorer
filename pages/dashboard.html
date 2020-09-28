@@ -12,7 +12,7 @@
       <div class="row no-gutters">
         <div class="col-lg-4">
           <div class="dash-content">
-            <label class="tx-primary" tkey="totalBanked">Total Banked</label>
+            <label class="tx-primary" tkey="totalBanked">total escrow</label>
             <label class="tx-primary" id="depositCoinsPct"></label><BR>
             <label class="tx-secondary" tkey="totalBankedInfo">Total funds locked in deposits and investments</label>
             <h2><span id="depositCoins">N/A</span></h2>
@@ -402,7 +402,7 @@
   };
 
   function renderLastBlock() {
-    $.getJSON("https://blockchain.cryptopay.org.za/daemon/getinfo", function (infoData) {
+    $.getJSON("https://blocks.cryptopay.org.za/info", function (infoData) {
       updateText('totalBanked', getReadableCoins2(infoData.full_deposit_amount, 0));
 
       $.ajax({
