@@ -7,7 +7,7 @@
         <span class="btnIcon fa fa-search"></span><span tkey="bpVerify">Verify</span>
       </button>
       <div class="dropdown-menu" aria-labelledby="verifyFunds">
-        <a class="dropdown-item" href="javascript:verifyCCXFunds()">Verify CPA funds</a>
+        <a class="dropdown-item" href="javascript:verifyCPAFunds()">Verify CPA funds</a>
         <a class="dropdown-item" href="javascript:verifywCCXFunds()">Verify wCCX funds</a>
         <a class="dropdown-item" href="index.html?preloadData=cpa#check_funds">Got to verify page for CPA funds</a>
         <a class="dropdown-item" href="index.html?preloadData=wccx#check_funds">Got to verify page for wCCX
@@ -294,7 +294,7 @@
         return total + Math.round(num.value);
       }, 0);
 
-      // unspent funds calculated and total funds      
+      // unspent funds calculated and total funds
       var totalFundsAvailable = parseFloat(fundsProof.wallet.total) * coinUnits;
       var currUnspentFunds = Math.trunc(unspentFunds - spentSoFar);
 
@@ -470,7 +470,7 @@
         cache: 'false',
         success: function (data) {
           fundsTable.row.add([
-            "<a href='https://explorer.conceal.network/index.html?hash=" + data.result.txDetails.hash + "#blockchain_transaction'>" + data.result.txDetails.hash + "</a>",
+            "<a href='https://blockchain.cryptopay.org.za/index.html?hash=" + data.result.txDetails.hash + "#blockchain_transaction'>" + data.result.txDetails.hash + "</a>",
             formatDate(data.result.block.timestamp),
             getReadableCoins2(400000000000, 0)
           ]).draw(false);
@@ -479,7 +479,7 @@
     });
   });
 
-  function verifyCCXFunds() {
+  function verifyCPAFunds() {
     result_container.hide();
     checkReserve(result_container, "", fundsProof.keys.cpa.address, fundsProof.keys.cpa.signature);
   }

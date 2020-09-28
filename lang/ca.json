@@ -7,7 +7,7 @@
     "bp": "Balance Proof",
     "txFunds": "Funds",
     "searchHint": "Search by block height / hash, transaction hash, payment id",
-    
+
     "welcome": "Welcome",
     "earnedToDate": "Interest paid to date",
     "interestEarnedInfo": "All the interest paid from deposits",
@@ -32,13 +32,13 @@
     "totalSupply": "Total Supply",
     "totalSupplyInfo": "The total supply minted to date.",
     "markets": "Market / Calculator",
-    "mktCCXToUSD": "CPA to USD",
-    "mktCCXToBTC": "CPA to BTC",
+    "mktCPAToUSD": "CPA to USD",
+    "mktCPAToBTC": "CPA to BTC",
     "mktMarketcap": "Marketcap",
     "mktDailyVolume": "Daily Volume",
     "estimateProfit": "Estimate Mining Profits",
-    "perDay": "per day",	
-    
+    "perDay": "per day",
+
     "netStats": "NETWORK STATISTICS",
     "txNetworkAmmount": "AMOUNT",
     "txNetworkFee": "FEE",
@@ -56,7 +56,7 @@
     "blockLatestTXS": "TXS",
     "blockLatestTime": "DATE-TIME",
     "searchHeight": "Height",
-    
+
     "stats": "Stats",
     "poolsSpeed": "Pools speed:",
     "networkSpeed": "Network speed:",
@@ -65,7 +65,7 @@
     "avgDiff": "Average difficulty:",
     "avfHashrate": "Average Hashrate:",
     "estMiningProfits": "Estimate Mining Profits",
-    "CCXPerDay": "CPA / day",
+    "CPAPerDay": "CPA / day",
     "poolsHeight": "Height",
     "poolsHashrate": "Hashrate",
     "poolsMiners": "Miners",
@@ -74,7 +74,7 @@
     "poolsLastBlockFound": "Last Block Found",
 	"poolsChartTitle": "Network Hashrate Visualization",
 
-    "txText1": "This page allows viewing of private data in a transaction not viewable using the <a href='http://explorer.conceal.network/' target = '_blank'>Conceal Block Explorer</a>, if you have the transaction hash, the recipient wallet address and either the secret transaction key (provided by the sender and valid for only a single transaction) or the recipient's secret view key.",
+    "txText1": "This page allows viewing of private data in a transaction not viewable using the <a href='http://blockchain.cryptopay.org.za/' target = '_blank'>Conceal Block Explorer</a>, if you have the transaction hash, the recipient wallet address and either the secret transaction key (provided by the sender and valid for only a single transaction) or the recipient's secret view key.",
     "txText2": "Select the type of secret key, complete the form, then click on <i>SHOW TRANSACTION</i>. If you omit the address and/or secret key, the transaction will be displayed without private data. The transaction can be viewed only after it is included in a block, which may take a few minutes.",
     "txTransactionKey": "Secret transaction key provided by sender",
     "txViewKey": "Secret view key owned by recipient",
@@ -122,7 +122,7 @@
     "blockRewardPenaltyHint": "Penalty for exceeding the median. <penalty> = (<total transactions size> / <effective tx median> − 1) ^ 2. No penalty if total transactions size is less then effective median. Penalty is near 100% if total txs size is twice the effective median. Greater blocks are not allowed.",
     "blockBaseRewardHint": "Base value for calculating the block reward. Does not depend on how many transactions are included into the block. Also, this is how many coins the miner would receive if the block contains only coinbase transaction.",
     "blockTxFeeHint": "Sum of fees for all transactions in the block.",
-    "blockRewardHint": "Actual amount of coins the miner received for finding the block. <reward> = <base reward> × (1 − <penalty>) + <transactions fee>",	
+    "blockRewardHint": "Actual amount of coins the miner received for finding the block. <reward> = <base reward> × (1 − <penalty>) + <transactions fee>",
     "blockHeight": "Height:",
     "blockTimestamp": "Timestamp:",
     "blockVersion": "Version:",
@@ -168,7 +168,7 @@
     "txViewOutputsKey": "Key",
 
 	"btnLoadMore": "Load More",
-	
+
     "poweredBy": "Powered by",
     "openSource": "open sourced under the"
 }

@@ -135,8 +135,8 @@
         <div class="col-lg-3">
           <div class="dash-content dash-small-info dash-market">
             <div class="info-text">
-              <label class="tx-primary" tkey="mktCCXToUSD">CPA to USD</label>
-              <h2><span id="CCXToUSD">N/A</h2>
+              <label class="tx-primary" tkey="mktCPAToUSD">CPA to USD</label>
+              <h2><span id="CPAToUSD">N/A</h2>
             </div>
             <div class="icon icon-info">
               <span class="fa fa-sm fa-dollar"></span>
@@ -146,7 +146,7 @@
         <div class="col-lg-3">
           <div class="dash-content dash-small-info dash-market">
             <div class="info-text">
-              <label class="tx-primary" tkey="mktCCXToBTC">CPA to BTC</label>
+              <label class="tx-primary" tkey="mktCPAToBTC">CPA to BTC</label>
               <h2><span id="CCXToBTC">N/A</span></h2>
             </div>
             <div class="icon icon-info">
@@ -223,7 +223,7 @@
 
 <script>
   var block = null;
-  var USDperCCX = null;
+  var USDperCPA = null;
   var diffAreaChart = null;
   var marketPriceAreaChart = null;
 
@@ -273,8 +273,8 @@
 
   // Get price in specified currency
   function getCurrencyPriceText(coinAmmount) {
-    if (USDperCCX) {
-      var price = USDperCCX * coinAmmount;
+    if (USDperCPA) {
+      var price = USDperCPA * coinAmmount;
       return ("($ " + price.toFixed(2) + ")");
     }
   }
@@ -307,8 +307,8 @@
 
       // get conceal market data
       $.getJSON("https://api.coingecko.com/api/v3/coins/conceal?sparkline=true", function (data) {
-        USDperCCX = data.market_data.current_price.usd;
-        $("#CCXToUSD").html("$ " + localizeNumber(data.market_data.current_price.usd.toFixed(2)));
+        USDperCPA = data.market_data.current_price.usd;
+        $("#CPAToUSD").html("$ " + localizeNumber(data.market_data.current_price.usd.toFixed(2)));
         $("#CCXToBTC").html(data.market_data.current_price.btc.toFixed(8));
         $("#marketcap").html("$ " + localizeNumber(data.market_data.market_cap.usd.toFixed(0)));
         $("#marketcapRank").html("(RANK " + data.market_cap_rank + ")");
@@ -402,7 +402,7 @@
   };
 
   function renderLastBlock() {
-    $.getJSON("https://explorer.conceal.network/daemon/getinfo", function (infoData) {
+    $.getJSON("https://blockchain.cryptopay.org.za/daemon/getinfo", function (infoData) {
       updateText('totalBanked', getReadableCoins2(infoData.full_deposit_amount, 0));
 
       $.ajax({

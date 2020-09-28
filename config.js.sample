@@ -1,7 +1,0 @@
-var api = 'https://blocks.cryptopay.org.za';
-var poolListUrl = 'https://restapi.cryptopay.org.za/pools/';
-var donationAddress = "";
-var blockTargetInterval = 120;
-var coinUnits = 1000000;
-var symbol = 'CPA';
-var refreshDelay = 5000;

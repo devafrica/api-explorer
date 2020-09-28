@@ -73,7 +73,7 @@ var CCX_GlobalNodeMap = (function () {
       map.addControl(new L.Control.Fullscreen());
     }
 
-    $.getJSON("https://explorer.conceal.network/services/nodes/geodata", function (data) {
+    $.getJSON("https://blockchain.cryptopay.org.za/services/nodes/geodata", function (data) {
       $("#nodesNumber").html("(" + data.length + " online)");
 
       if (markerClusters) {
