@@ -78,9 +78,9 @@
 
       if (preloadData) {
         $.getJSON("funds.dat?" + makeid(20), function (resultFunds) {
-          if (preloadData == "ccx") {
-            $("#public_address").val(resultFunds.keys.ccx.address);
-            $("#signature").val(resultFunds.keys.ccx.signature);
+          if (preloadData == "cpa") {
+            $("#public_address").val(resultFunds.keys.cpa.address);
+            $("#signature").val(resultFunds.keys.cpa.signature);
           } else if (preloadData == "wccx") {
             $("#public_address").val(resultFunds.keys.wccx.address);
             $("#signature").val(resultFunds.keys.wccx.signature);

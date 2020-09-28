@@ -1,9 +1,12 @@
 <?php
 return array(
-        'api' => 'https://restapi.cryptopay.org.za',
-        'pool' => 'https://restapi.cryptopay.org.za/pools',
-        'services' => 'https://restapi.cryptopay.org.za',
-        'blockTargetInterval' => 120,
+        'api' => 'https://blocks.cryptopay.org.za',
+        'pool' => 'https://raw.githubusercontent.com/devafrica/pools-nonapi/master/list.json',
+        'services' => 'https://blocks.cryptopay.org.za',
+        'blockTargetInterval' => 90,
         'coinUnits' => 1000000
+
+
 );
 ?>
+
