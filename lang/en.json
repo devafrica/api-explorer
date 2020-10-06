@@ -7,8 +7,8 @@
     "bp": "Balance Proof",
     "txFunds": "Funds",
     "searchHint": "Search by block height / hash, transaction hash, payment id",
-    
-    "welcome": "Welcome",
+
+    "welcome": "Welcome to Cryptopayafrica",
     "earnedToDate": "Interest paid to date",
     "interestEarnedInfo": "All the interest paid from deposits",
     "maxSupplyInfo": "Max CPA that will ever be minted",
@@ -37,8 +37,8 @@
     "mktMarketcap": "Marketcap",
     "mktDailyVolume": "Daily Volume",
     "estimateProfit": "Estimate Mining Profits",
-    "perDay": "per day",	
-    
+    "perDay": "per day",
+
     "netStats": "NETWORK STATISTICS",
     "txNetworkAmmount": "AMOUNT",
     "txNetworkFee": "FEE",
@@ -56,7 +56,7 @@
     "blockLatestTXS": "TXS",
     "blockLatestTime": "DATE-TIME",
     "searchHeight": "Height",
-    
+
     "stats": "Stats",
     "poolsSpeed": "Pools speed:",
     "networkSpeed": "Network speed:",
@@ -168,7 +168,7 @@
     "txViewOutputsKey": "Key",
 
 	"btnLoadMore": "Load More",
-	
+
     "poweredBy": "Powered by",
     "openSource": "open sourced under the"
 }

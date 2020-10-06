@@ -34,8 +34,8 @@ var calculateTotalFee = function (config) {
 };
 
 var renderPoolRow = function (data) {
-  var agostring = $.timeago(new Date(data.pool.lastBlockFound));
-  var datestring = renderDate(new Date(data.pool.lastBlockFound));
+  var agostring = $.timeago(new Date(data.pool.last_known_block_index));
+  var datestring = renderDate(new Date(data.pool.last_known_block_index));
   var poolHashrate = data.pool.soloHashrate ? (data.pool.hashrate + data.pool.soloHashrate) : data.pool.hashrate;
   var pools_row = [];
 
